@@ -17,9 +17,6 @@ All paths are relative, so it works at `/care-manager-site/`. When ready: Settin
 
 ## TODO before launch
 
-1. **Pilot sign-up form (Formspree).** The form in `index.html` posts to `https://formspree.io/f/YOUR_FORM_ID`.
-   - Create a free account at formspree.io and make a new form.
-   - Copy the form id (the part after `/f/` in the endpoint URL).
-   - In `index.html`, replace `YOUR_FORM_ID` in the form's `action` (search for the TODO comment).
-   - Until then, submitting goes nowhere useful. The form uses plain HTML only (no Formspree JavaScript), a hidden honeypot field (`_gotcha`) and a subject line (`_subject`).
+1. **Pilot sign-up form (Formspree).** The form in `index.html` posts to the Formspree form `https://formspree.io/f/xnpjlwga`.
+   - It uses plain HTML only (no Formspree JavaScript), a hidden honeypot field (`_gotcha`) and a subject line (`_subject`). Submissions appear in the Formspree dashboard.
 2. **Fallback email.** `pilot@example.com` is a placeholder. Replace it with the real address everywhere it appears in `index.html` (search for `pilot@example.com`; there are TODO comments next to it).
