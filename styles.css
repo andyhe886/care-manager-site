@@ -51,6 +51,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .feed small{display:block;color:var(--text2);font-size:.875rem}
 .note{font-size:.9rem;color:var(--text2);margin:.9rem 0 0}
 .deco{position:absolute;pointer-events:none}
+@media (max-width:900px){.deco{display:none}}
 
 .cards{display:grid;gap:18px;margin-top:1.6rem}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:0 4px 0 var(--shadow);padding:24px}

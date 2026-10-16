@@ -11,12 +11,11 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Publish with GitHub Pages (later)
+## Publishing
 
-All paths are relative, so it works at `/care-manager-site/`. When ready: Settings, Pages, "Deploy from a branch", pick the branch (for example `main`) and the `/ (root)` folder.
+All paths are relative, so it works at `/care-manager-site/`. Published by GitHub Pages from `main` (root) at https://andyhe886.github.io/care-manager-site/.
 
-## TODO before launch
+## Pilot sign-up form
 
-1. **Pilot sign-up form (Formspree).** The form in `index.html` posts to the Formspree form `https://formspree.io/f/xnpjlwga`.
-   - It uses plain HTML only (no Formspree JavaScript), a hidden honeypot field (`_gotcha`) and a subject line (`_subject`). Submissions appear in the Formspree dashboard.
-2. **Fallback email.** `pilot@example.com` is a placeholder. Replace it with the real address everywhere it appears in `index.html` (search for `pilot@example.com`; there are TODO comments next to it).
+The form in `index.html` posts to the Formspree form `https://formspree.io/f/xnpjlwga`.
+It uses plain HTML only (no Formspree JavaScript), a hidden honeypot field (`_gotcha`) and a subject line (`_subject`). Submissions appear in the Formspree dashboard.
