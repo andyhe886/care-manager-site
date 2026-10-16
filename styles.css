@@ -44,8 +44,8 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .hero-card .sun{position:absolute;width:92px;height:92px;top:-56px;right:10px}
 .hero-card h2{font-size:1.25rem;margin-bottom:.7rem;max-width:12em}
 .feed{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.feed li{display:flex;gap:10px;align-items:flex-start;background:var(--bg);border-radius:18px;padding:10px 14px;font-size:1rem;line-height:1.4}
-.feed .dot{flex:none;width:28px;height:28px;border-radius:50%;background:var(--mint);display:grid;place-items:center;margin-top:1px}
+.feed li{display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:12px;align-items:start;background:var(--bg);border-radius:18px;padding:10px 14px;font-size:1rem;line-height:1.4}
+.feed .dot{position:static;width:28px;min-width:28px;height:28px;border-radius:50%;background:var(--mint);display:grid;place-items:center;margin-top:1px}
 .feed .dot.c{background:#FFE3D6}
 .feed .dot svg{width:16px;height:16px}
 .feed small{display:block;color:var(--text2);font-size:.875rem}
@@ -74,7 +74,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .state.off{background:#fff;color:var(--text);border:2px solid var(--shadow)}
 .state svg{width:16px;height:16px}
 .checks{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:10px}
-.checks li{display:flex;gap:10px;align-items:flex-start}
+.checks li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:10px;align-items:start}
 .checks svg{flex:none;width:26px;height:26px;margin-top:2px}
 
 .soon{background:var(--peach2);border-radius:48px;margin:0 8px}
@@ -103,7 +103,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .mini.s{background:#fff;border:3px solid var(--shadow);color:var(--text)}
 
 .privacy ul{list-style:none;margin:1.6rem 0 0;padding:0;display:grid;gap:18px}
-.privacy li{display:flex;gap:14px;align-items:flex-start}
+.privacy li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px;align-items:start}
 .privacy li .badge{flex:none;width:48px;height:48px;border-radius:16px;background:var(--mint);margin:0}
 .privacy li .badge svg{width:28px;height:28px}
 .privacy li p{margin:0;color:var(--text2)}
