@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Care Manager: share a parent's care without the group chat</title>
+<meta name="description" content="Care Manager helps adult children and siblings coordinate care for an aging parent. One shared feed, appointments, medication tracking, and the parent stays in control. iPhone first. Join the pilot.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Care Manager: share a parent's care without the group chat">
+<meta property="og:description" content="Siblings share one calm view of a parent's care. The parent chooses what each person sees. Join our small pilot in Canada.">
+<meta name="theme-color" content="#FFF3EA">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Shared drawings, reused below. Decorative, so hidden from screen readers. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="sun" viewBox="0 0 100 100">
+      <g stroke="#F2A93B" stroke-width="8" stroke-linecap="round"><path d="M50 5v11M50 84v11M5 50h11M84 50h11M18 18l8 8M74 74l8 8M82 18l-8 8M26 74l-8 8"/></g>
+      <circle cx="50" cy="50" r="27" fill="#FFC94D"/>
+      <circle cx="41" cy="46" r="3.2" fill="#3B2A20"/><circle cx="59" cy="46" r="3.2" fill="#3B2A20"/>
+      <path d="M40 56q10 10 20 0" fill="none" stroke="#3B2A20" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="33" cy="55" r="4.5" fill="#FF8F80" opacity=".85"/><circle cx="67" cy="55" r="4.5" fill="#FF8F80" opacity=".85"/>
+    </symbol>
+    <symbol id="moon" viewBox="0 0 100 100">
+      <circle cx="46" cy="56" r="34" fill="#B7B0F2"/>
+      <circle cx="62" cy="70" r="5" fill="#A29AE6"/><circle cx="30" cy="72" r="3.5" fill="#A29AE6"/>
+      <path d="M31 52q6 5 12 0M52 52q6 5 12 0" fill="none" stroke="#3B2A20" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M42 64q5 4 10 0" fill="none" stroke="#3B2A20" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="28" cy="61" r="4.2" fill="#FF8F80" opacity=".85"/><circle cx="68" cy="61" r="4.2" fill="#FF8F80" opacity=".85"/>
+      <path d="M72 14h12l-12 14h12" fill="none" stroke="#4B418F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.800-8 11-8 11z" fill="#FF8F80"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.500l2.900 6.100 6.600.8-4.900 4.600 1.300 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z" fill="#FFC94D" stroke="#F2A93B" stroke-width="1.200" stroke-linejoin="round"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="dash" viewBox="0 0 24 24"><path d="M6 12h12" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round"/></symbol>
+    <symbol id="pillcap" viewBox="0 0 100 50">
+      <rect x="4" y="4" width="92" height="42" rx="21" fill="#fff" stroke="#3B2A20" stroke-width="3"/>
+      <path d="M50 4h25a21 21 0 0 1 0 42H50z" fill="#FF8F80" stroke="#3B2A20" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M16 15q8-5 20-3" fill="none" stroke="#E8E2DC" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg aria-hidden="true" focusable="false"><use href="#sun"/></svg><span>Care Manager</span></a>
+    <a class="btn small" href="#join">Join the pilot</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <svg class="deco" style="width:28px;height:28px;left:6%;top:12%" aria-hidden="true" focusable="false"><use href="#star"/></svg>
+    <svg class="deco" style="width:22px;height:22px;left:48%;top:4%" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">An iPhone app, coming soon</p>
+        <h1 id="hero-title">Share Mom's care with your siblings. <span>Skip the group chat.</span></h1>
+        <p class="lede">One calm place for the whole family to see appointments, medications and updates. Mom decides who sees what.</p>
+        <a class="btn" href="#join">Join the pilot</a>
+        <p class="note">We are in development and looking for a few families in Canada to try it with us.</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-card">
+          <svg class="sun bob" role="img" aria-label="A smiling sun"><use href="#sun"/></svg>
+          <h2>Everyone sees the same updates</h2>
+          <ul class="feed">
+            <li><span class="dot"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><span>Margaret marked her morning pill taken<small>Sample update, 8:05 a.m.</small></span></li>
+            <li><span class="dot c"><svg aria-hidden="true" focusable="false" style="color:#8F2F16"><use href="#heart"/></svg></span><span>Alex is driving to Tuesday's appointment<small>Sample update, 9:30 a.m.</small></span></li>
+            <li><span class="dot c"><svg aria-hidden="true" focusable="false" style="color:#8F2F16"><use href="#star"/></svg></span><span>Sam added a note after the call<small>Sample update, 1:15 p.m.</small></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Problem -->
+  <section class="problem" aria-labelledby="problem-title">
+    <div class="wrap">
+      <p class="eyebrow">Sound familiar?</p>
+      <h2 id="problem-title">Caring from a distance is hard enough.</h2>
+      <div class="cards three">
+        <div class="card"><h3>Updates are everywhere</h3><p>Texts, calls and three different group chats. Nobody can find the last thing anyone said.</p></div>
+        <div class="card"><h3>Nobody is sure about the pills</h3><p>Did Mom take them today? Who is taking her to the appointment? You end up asking, and asking again.</p></div>
+        <div class="card"><h3>Mom loses her say</h3><p>When everything is shared with everyone, the person it is about is the last to be asked.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. How it works -->
+  <section aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">One shared view for the whole family</h2>
+      <p class="lede">Care Manager organizes, reminds, summarizes and lets you know when something needs attention.</p>
+      <div class="cards four">
+        <div class="card"><div class="num" aria-hidden="true">1</div><h3>A shared feed</h3><p>Everyone sees the same log, like "Margaret marked her morning pill taken."</p></div>
+        <div class="card"><div class="num" aria-hidden="true">2</div><h3>Appointments</h3><p>Reminders go to the family, and you can see who is driving.</p></div>
+        <div class="card"><div class="num" aria-hidden="true">3</div><h3>Medication tracking</h3><p>Doses are marked taken or skipped. Missed doses show up for the family. Pill counts warn you when a refill is coming up.</p></div>
+        <div class="card"><div class="num" aria-hidden="true">4</div><h3>Everyone in the loop</h3><p>Brothers, sisters and Mom all see what she has chosen to share, in one place.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Mom stays in charge -->
+  <section class="charge" aria-labelledby="charge-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Her care, her choice</p>
+        <h2 id="charge-title">Mom stays in charge</h2>
+        <p class="lede">Care Manager starts with Mom's permission. Nobody sees anything until she says yes.</p>
+        <ul class="checks">
+          <li><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg><span>Family members see nothing by default.</span></li>
+          <li><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg><span>She chooses, one area at a time: medications, appointments or notes.</span></li>
+          <li><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg><span>She can change her mind whenever she likes.</span></li>
+        </ul>
+      </div>
+      <div class="toggle-card" role="group" aria-label="Example of sharing choices">
+        <p class="who"><svg aria-hidden="true" focusable="false"><use href="#sun"/></svg> Margaret shares with Alex</p>
+        <ul class="rows">
+          <li><span>Appointments</span><span class="state on"><svg aria-hidden="true" focusable="false"><use href="#check"/></svg>Shared</span></li>
+          <li><span>Medications</span><span class="state on"><svg aria-hidden="true" focusable="false"><use href="#check"/></svg>Shared</span></li>
+          <li><span>Notes</span><span class="state off"><svg aria-hidden="true" focusable="false"><use href="#dash"/></svg>Not shared</span></li>
+        </ul>
+        <p class="note" style="margin:0">Example only. Sample names.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Coming soon -->
+  <section class="soon" aria-labelledby="soon-title">
+    <div class="wrap">
+      <div class="intro">
+        <span class="soon-badge">Coming soon</span>
+        <h2 id="soon-title">Two things we are building next</h2>
+        <p class="lede">These are not in the app yet. Pilot families will help us get them right.</p>
+      </div>
+
+      <div class="block">
+        <div class="copy">
+          <span class="soon-badge">Coming soon</span>
+          <h3 style="font-size:1.8rem">A simple pill screen for parents</h3>
+          <p class="lede">Big buttons. Drawn pills. A smiling sun for morning and a sleepy moon for evening. Mom taps one button when she has taken her pill.</p>
+          <p class="muted" style="color:var(--text2)">Made for parents who do not read English well, which is true for many immigrant families. Pictures lead, words follow.</p>
+        </div>
+        <div class="phone" role="img" aria-label="Drawing of the planned Today's pills screen: a morning card with a smiling sun, a pill and a big Taken button, and an evening card with a sleepy moon.">
+          <div class="screen" aria-hidden="true">
+            <h4>Today's pills</h4>
+            <div class="pcard">
+              <svg class="char" focusable="false"><use href="#sun"/></svg>
+              <div class="when">Morning</div>
+              <svg class="pill" viewBox="0 0 100 50" focusable="false"><use href="#pillcap"/></svg>
+              <div class="big"><svg focusable="false"><use href="#check"/></svg>Taken</div>
+            </div>
+            <div class="pcard later">
+              <svg class="char" focusable="false"><use href="#moon"/></svg>
+              <div class="when">Evening</div>
+              <svg class="pill" viewBox="0 0 100 50" focusable="false"><use href="#pillcap"/></svg>
+              <div class="later-pill">Later</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block flip">
+        <div class="copy">
+          <span class="soon-badge">Coming soon</span>
+          <h3 style="font-size:1.8rem">Visit notes, summarized and reviewed by family</h3>
+          <p class="lede">After an appointment, a family member can add notes and get a short summary. Someone in the family reads it and decides what to share.</p>
+          <p style="color:var(--text2)">Every summary links back to the original note and says plainly that it is a summary, not advice.</p>
+        </div>
+        <div class="sum" role="img" aria-label="Drawing of a planned visit summary: a draft summary with a link to the original note and buttons to share or edit.">
+          <div aria-hidden="true">
+            <span class="tag">Draft summary, for review</span>
+            <div class="lines"><p>Sample: Mom saw her doctor on Tuesday. Alex wrote down the questions and the next visit date.</p></div>
+            <p class="fine">This is an AI summary, not medical advice. <u>Read the original note</u></p>
+            <div class="btns"><span class="mini p">Looks right, share</span><span class="mini s">Edit first</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Privacy -->
+  <section class="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <p class="eyebrow">Privacy, in plain words</p>
+      <h2 id="privacy-title">Your family's information stays yours</h2>
+      <ul>
+        <li><span class="badge"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><div><strong>Stored in Canada</strong><p>Your family's data is kept in Canada.</p></div></li>
+        <li><span class="badge"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><div><strong>Built with Canadian privacy law in mind</strong><p>We design with PIPEDA and Quebec's Law 25 in mind.</p></div></li>
+        <li><span class="badge"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><div><strong>Only what is needed</strong><p>We keep as little information as we can.</p></div></li>
+        <li><span class="badge"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><div><strong>Access is logged</strong><p>We keep a record of who looks at what.</p></div></li>
+        <li><span class="badge"><svg aria-hidden="true" focusable="false" style="color:#1E6B45"><use href="#check"/></svg></span><div><strong>Mom decides</strong><p>Nothing is shared with family until she agrees.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Final CTA + sign-up form -->
+  <section class="final" id="join" aria-labelledby="final-title">
+    <div class="wrap">
+      <div class="panel">
+        <svg class="sun bob" role="img" aria-label="A smiling sun"><use href="#sun"/></svg>
+        <h2 id="final-title">Join the pilot</h2>
+        <p>We are looking for a small group of families in Canada. Tell us a little about you and we will be in touch.</p>
+
+        <!-- TODO: replace YOUR_FORM_ID with the real Formspree form id -->
+        <form class="signup" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <p class="req-note">Fields marked <strong>(required)</strong> must be filled in.</p>
+
+          <div class="field">
+            <label for="f-name">Your name <span class="req">(required)</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span class="req">(required)</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-loc">City or province <span class="opt">(optional)</span></label>
+            <input id="f-loc" name="location" type="text" autocomplete="address-level1">
+          </div>
+
+          <fieldset class="field">
+            <legend>I'm caring for my&hellip; <span class="opt">(optional)</span></legend>
+            <div class="radios">
+              <label class="choice"><input type="radio" name="caring_for" value="Mother"><span>Mother</span></label>
+              <label class="choice"><input type="radio" name="caring_for" value="Father"><span>Father</span></label>
+              <label class="choice"><input type="radio" name="caring_for" value="Both"><span>Both</span></label>
+              <label class="choice"><input type="radio" name="caring_for" value="Someone else"><span>Someone else</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-lang">Your parent's preferred language <span class="opt">(optional)</span></label>
+            <input id="f-lang" name="parent_language" type="text">
+          </div>
+
+          <div class="field">
+            <label class="choice consent"><input type="checkbox" name="consent" value="yes" required><span>Contact me about the Care Manager pilot. I can ask to be removed anytime. <span class="req">(required)</span></span></label>
+          </div>
+
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Care Manager pilot sign-up">
+
+          <button class="btn big-submit" type="submit">Join the pilot</button>
+          <p class="fine">Please don't share health details here.</p>
+        </form>
+
+        <!-- TODO: replace pilot@example.com with the real contact address -->
+        <p class="mail">Prefer email? <a href="mailto:pilot@example.com">pilot@example.com</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Care Manager is not a medical service and does not give medical advice. In an emergency call 911.</strong></p>
+    <p>&copy; 2026 Care Manager</p>
+  </div>
+</footer>
+
+</body>
+</html>
